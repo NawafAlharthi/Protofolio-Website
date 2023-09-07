@@ -19,7 +19,76 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-txt">
+           <p>Software Engineer, Web Development</p>
+           <h1>Hello, Here is Nawaf</h1>
+        </div>
         </div>
     </div>
+<!-- About me section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/IMG_8921.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Nawaf is currently enrolled at the esteemed King Fahd University for Petroleum and Minerals, where he is pursuing his academic studies. He has achieved recognition as a certified full-stack robotics engineer by MECAI, which demonstrates his proficiency in both the theoretical and applied aspects of robotics. Alongside his academic pursuits, Nawaf has gained real-world experience as a product manager and collaborated with Okoul, a platform focused on providing opportunities to developers, as a part-time endeavor. Nawaf's academic endeavors extend into research, where he secured a grant from King Fahd University to explore the critical field of cybersecurity. In addition to his academic and professional pursuits, Nawaf has committed himself to various volunteer activities. He has notably contributed to many events organized by the Google Developers Student Clubs at KFUPM. Furthermore, Nawaf has been awarded an international prize by the Yale Association for Engineering and Technology for his participation in the National Olympiad for Scientific Creativity and his contributions to research, which highlights his drive for innovative thinking and excellence. He has also participated in highly selective apprenticeship programs at Project1932 and JeelTamooh, both of which were held by BCG. These experiences have further diversified his skills and knowledge.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- Skills -->
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development.</li>
+                        <li><span>Product Managment</span><br>Analyzing and evaluating the performance and potential of products.</li>
+                        <li><span>Problem Solving</span><br>Identifying, analyzing, and resolving challenges or obstacles.</li>
+                        <li><span>Interpersonal communication</span><br>Effectively convey thoughts, ideas, and information to others.</li>
+                    </ul>
+                </div>
+                <!-- Experience -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development.</li>
+                        <li><span>Product Managment</span><br>Analyzing and evaluating the performance and potential of products.</li>
+                        <li><span>Problem Solving</span><br>Identifying, analyzing, and resolving challenges or obstacles.</li>
+                        <li><span>Interpersonal communication</span><br>Effectively convey thoughts, ideas, and information to others.</li>
+                    </ul>
+                </div>
+                <!-- Education -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development.</li>
+                        <li><span>Product Managment</span><br>Analyzing and evaluating the performance and potential of products.</li>
+                        <li><span>Problem Solving</span><br>Identifying, analyzing, and resolving challenges or obstacles.</li>
+                        <li><span>Interpersonal communication</span><br>Effectively convey thoughts, ideas, and information to others.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontent){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        
+    }
+
+</script>
 </body>
 </html>
