@@ -7,21 +7,19 @@
     <title>Nawaf's Page</title>
 </head>
 <body>
+
     <div id="header">
         <div class="container">
-            <nav>
+            <nav id="home">
                 <img src="Images/Picture1.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Protofolio</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
         <div class="header-txt">
-           <p>Software Engineer, Web Development</p>
-           <h1>Hello, Here is Nawaf</h1>
+           <h1>Hello, <br>Here is Nawaf</h1>
+           <br>
+           <p>Software Engineer</p>
         </div>
         </div>
     </div>
@@ -43,7 +41,7 @@
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <!-- Skills -->
-                <div class="tab-contents" id="skills">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Web Development</span><br>Web app Development.</li>
                         <li><span>Product Managment</span><br>Analyzing and evaluating the performance and potential of products.</li>
@@ -54,41 +52,61 @@
                 <!-- Experience -->
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Web Development</span><br>Web app Development.</li>
-                        <li><span>Product Managment</span><br>Analyzing and evaluating the performance and potential of products.</li>
-                        <li><span>Problem Solving</span><br>Identifying, analyzing, and resolving challenges or obstacles.</li>
-                        <li><span>Interpersonal communication</span><br>Effectively convey thoughts, ideas, and information to others.</li>
+                        <li><span>Research Asistant (KFUPM)</span><br>As the author of the research paper "Enhancing IoT Security with an Efficient Network Intrusion Detection System," I gained extensive expertise in network intrusion detection systems and various-widths clustering algorithms, strengthening my research, analysis, and problem-solving skills.</li>
+                        <li><span>Product Analyst (Okoul)</span><br>Analyzing and evaluating the performance and potential of Okoul.com</li>
+                        <li><span>Student Intern (Smart Methods)</span><br>At Smart Methods Company's IoT and Software Development Department, I gained hands-on experience developing cutting-edge IoT solutions. This enhanced my problem-solving and critical thinking skills for complex software development challenges.</li>
                     </ul>
                 </div>
                 <!-- Education -->
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Web Development</span><br>Web app Development.</li>
-                        <li><span>Product Managment</span><br>Analyzing and evaluating the performance and potential of products.</li>
-                        <li><span>Problem Solving</span><br>Identifying, analyzing, and resolving challenges or obstacles.</li>
-                        <li><span>Interpersonal communication</span><br>Effectively convey thoughts, ideas, and information to others.</li>
+                        <li><span>King Fahd University of Petroleum and Minerals</span><br>I am currently in my sophomore year of studying Software Engineering.
+                        </li>
+                        <li><span>Ibn khaldun high school</span><br>Grade: 99.83</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- ------- Contact ------ -->
+<div id="contact">
+    <div class="container">
+        <div id="row">
+            <div class="contact-left">
+                <div class="lololo">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="email">Email: nawafallharthii@gmail.com
+                <br>  Social Accounts: 
+                    <a href="https://twitter.com/CEONawaf" class="dd"><i class="fa-brands fa-x-twitter" style="color: white;"></i></a>
+                    <a href="https://www.linkedin.com/in/nawafalharthii"><i class="fa-brands fa-linkedin-in" style="color: white;"></i></a>
+                    <a href="https://www.instagram.com/nawwaf.3/?hl=en"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
 <script>
-    var tablinks = document.getElementsByClassName('tab-links');
-    var tabcontents = document.getElementsByClassName('tab-contents');
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
         for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+            tablink.classList.remove("active-link");
         }
 
-        for(tabcontent of tabcontent){
-            tabcontent.classList.remove("active-tab")
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("active-link")
-        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
 
 </script>
+<script src="https://kit.fontawesome.com/a22b74dea5.js" crossorigin="anonymous"></script>
 </body>
 </html>
